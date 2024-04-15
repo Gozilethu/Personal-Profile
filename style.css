@@ -1,0 +1,302 @@
+/* Resetting default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the body */
+body {
+    background-color: rgb(193, 207, 207);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/***Navigation Bar***/
+/* Styling for the navigation bar */
+nav {
+    color: #fff;
+    height: 100%;
+    background-color: #8b8b8b;
+    /* Add a bottom border for emphasis */
+    border-bottom: 5px solid #ff6f61;
+    /* Add a subtle shadow for depth */
+    box-shadow: 0 3px 5px rgba(247, 69, 69, 0.1);
+}
+
+nav h1{
+    height: 100%;
+
+}
+/* Styling for the unordered list inside the navigation bar */
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Styling for list items inside the navigation bar */
+nav li {
+    height: 50px;
+    color: #fff;
+}
+
+/* Styling for links inside the navigation bar */
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+/* Styling for links on hover */
+nav a:hover {
+    background-color: #ff6f61;
+}
+
+/* Styling for active links */
+nav li a.active,
+nav li a:hover {
+    color: #fff;
+    background-color: #ff6f61;
+}
+
+/* Styling for the pseudo-element after active links */
+nav li a.active::after,
+nav li a:hover::after {
+    color: #fff;
+}
+
+/* Styling for the first child of list items */
+nav li:first-child {
+    margin-right: auto;
+}
+
+/* Styling for the sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(240, 231, 231, 0.144);
+    backdrop-filter: blur(12px);
+    /* Add a shadow for depth */
+    box-shadow: -10px 0 10px rgba(255, 255, 255, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Styling for list items inside the sidebar */
+.sidebar li {
+    width: 100%;
+}
+
+/* Styling for links inside the sidebar */
+.sidebar a {
+    width: 100%;
+}
+
+/* Styling for the menu button */
+.menu-button {
+    display: none;
+}
+
+/* Media queries for smaller screens */
+@media(max-width: 800px) {
+    /* Hide elements with the class hideOnMobile */
+    .hideOnMobile {
+        display: none;
+    }
+    /* Display the menu button */
+    .menu-button {
+        display: block;
+    }
+}
+
+/* Media queries for even smaller screens */
+@media(max-width: 400px) {
+    /* Adjust width for the sidebar */
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* Styling for heading 1 */
+h1 {
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+/* Styling for the content section */
+.content {
+    background-color: #c2c2c2;
+    padding: 20px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    /* Changed from 0% to normal */
+    line-height: normal;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+
+/* Styling for paragraphs */
+p {
+    /* Changed from 0% to normal */
+    line-height: normal;
+}
+
+/* Styling for heading 2 */
+h2 {
+    font-weight: bolder;
+}
+
+/* Styling for italic text */
+i {
+    font-size: 12px;
+}
+
+/* Styling for the footer */
+.footer {
+    background-color: #8b8b8b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    /* Add a bottom border for emphasis */
+    border-top: 5px solid #ff6f61;
+    /* Add a subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    /* Changed from 10px to normal */
+    line-height: normal;
+}
+
+/* Styling for paragraphs inside the footer */
+.footer p {
+    font-size: 15px;
+}
+
+/* Styling for heading 5 inside the footer */
+.footer h5 {
+    margin: 0;
+    /* Increase font size for impact */
+    font-size: 20px;
+    /* Convert text to uppercase */
+    text-transform: uppercase;
+    /* Add letter spacing for readability */
+    letter-spacing: 2px;
+    /* Make font bold for emphasis */
+    font-weight: bold;
+}
+
+/* Styling for images */
+.images {
+    padding: 20px;
+    width: 70%;
+    align-items: center;
+    /* Changed from 100% to auto */
+    height: auto;
+    /* Corrected the unit to 's' */
+    transition: 0.8s;
+    /* Changed display to flex */
+    display: flex;
+    /* Aligns images horizontally with space around */
+    justify-content: space-around;
+    /* Aligns items vertically */
+    align-items: center;
+    border-radius: 10px;
+    /* Add a shadow for depth */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for images inside div */
+.images div img {
+    /* Changed from 100% to auto */
+    height: auto;
+    object-fit: cover;
+    /* Border radius applies to individual images */
+    border-radius: 10px;
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Allows the image to scale proportionally */
+}
+/* Styling for forms */
+form {
+    text-align: center;
+}
+
+/* Styling for divs inside forms */
+form div {
+    margin: 0 auto;
+}
+
+/* Download Resume section styles */
+.download-resume {
+    margin-top: 20px;
+}
+
+.download-resume a {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.download-resume a:hover {
+    background-color: #45a049;
+}
+
+/***Websites logo***/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+/* Project image styles */
+.project img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Allows the image to scale proportionally */
+}
+
+.skills{
+    background-color: #c7aaaa;
+    border-radius: 10px;
+    display: flex;
+    width: 80%;
+}
+.skill {
+    margin-bottom: 20px;
+}
+
+.bar-chart {
+    background-color: #90c6ff;
+    border-radius: 5px;
+    height: 100px; /* Adjust the height of the bar chart */
+    width: 30%;
+    overflow: hidden;
+}
+
+.bar {
+    background-color: #f0f0f0; /* Bar color */
+    height: 10px; /* Initial height */
+    transition: height 3s ease-in-out; /* Animation duration */
+}
+

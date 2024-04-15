@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // Prevent right-click
+    document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
+    </script>
+  <!-- Title -->
+  <title>About Me</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation bar-->
+  <nav>
+    <!-- Sidebar navigation items -->
+    <ul class="sidebar">
+      <!-- Button to hide the sidebar -->
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <!-- Links to different pages -->
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="aboutme.html">About Me</a></li>
+      <li><a href="myprojects.html">My Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!-- Main navigation items -->
+    <ul>
+      <!-- Logo and website title -->
+      <li><div class="logo"><h1>Thandazani Mbutho</h1></div></li>
+      <!-- Links to different pages (hidden on mobile) -->
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a class="active" href="aboutme.html">About Me</a></li>
+      <li class="hideOnMobile"><a href="myprojects.html">My Projects</a></li>
+      <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+      <!-- Button to show the sidebar (visible on mobile) -->
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  <!-- Form section -->
+  <form>
+    <!-- Content section -->
+    <div class="content">
+        <!-- About Me section -->
+        <div>
+            <h2>About Me</h2> 
+        </div>
+        <!-- Personal Information -->
+        <div>
+            <p>Durban, KwaZulu-Natal 4001</p>
+            <p>mbuthothandazani@gmail.com</p>
+            <p>+27 79 076 3974</p>
+            <br>
+        </div>
+        <!-- Education section -->
+        <div>
+            <h2>Education</h2>
+            <hr>
+            <h3>Information Communication Technology</h3>
+            <p>Mangosuthu University of Technology - Umlazi, KwaZulu-Natal</p>
+            <h4>January 2021 to Present</h4>
+            <br>
+        </div>
+        <div>
+            <h3>Grade 12 in Basic Education</h3>
+            <p>Sithabile Secondary Scholl - iNanda, KwaZulu-Natal</p>
+            <h4>January 2015 to 2020</h4>
+            <br>
+        </div>
+        <!-- Languages section -->
+        <div>
+            <h2>Languages</h2>
+            <hr>
+            <p>IsiZulu - Native</p>
+            <p>English - Fluent</p>
+            <br>
+        </div>
+        <!-- Awards section -->
+        <div>
+            <h2>Awards</h2>
+            <hr>
+            <h3>(MUT) Hakaton 2021 (3rd position)</h3>
+            <p>August 2021</p>
+            <br>
+        </div>
+              <!-- Skills Showcase section -->
+            <h2>Skills</h2>
+            <hr>
+            <div class="skills">
+              <!-- Individual skills with progress bars-->
+              <div class="skill">
+                  <p>Python</p>
+                  <div class="bar-chart">
+                    <div class="bar" style="height: 10%;"></div>
+                </div>
+              </div>
+
+            <div class="skill">
+              <p>Java</p>
+              <div class="bar-chart">
+                  <div class="bar" style="height: 20%;"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <p>C#</p>
+              <div class="bar-chart">
+                  <div class="bar" style="height: 30%;"></div>
+              </div>
+            </div>
+
+              <div class="skill">
+                <p>HTML</p>
+                <div class="bar-chart">
+                    <div class="bar" style="height: 60%;"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <p>CSS</p>
+                <div class="bar-chart">
+                    <div class="bar" style="height: 60%;"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <p>JavaScript</p>
+                <div class="bar-chart">
+                    <div class="bar" style="height: 65%;"></div>
+                </div>
+              </div>
+              <!-- Repeat the structure for other skills -->
+              <!-- Java, C#, HTML, CSS, JavaScript -->
+              <!-- Add other skills here -->
+            </div>
+
+            <br>
+        </div>
+        <!-- Certifications and Licenses section -->
+        <div>
+            <h2>Certifications and Licenses</h2>
+            <hr>
+            <h3>Driver's licenses (code 10)</h3>
+            <p>2022</p>
+            <br>
+            <h3>Software Testing Tutorial</h3>
+            <p>March 2024</p>
+            <br>
+            <h3>Data Analysis Projects</h3>
+            <p>March 2024</p>
+            <br>
+            <h3>Introduction to Cyber Crime</h3>
+            <p>March 2024</p>
+            <br>
+            <h3>Artificial Intelligence Intro</h3>
+            <p>June 2021</p>
+            <p><i>IBM badge</i></p>
+            <br>
+            <h3>Cloud Intro</h3>
+            <p>June 2021</p>
+            <p><i>IBM badge</i></p>
+            <br>
+            <h3>Coding Intro</h3>
+            <p>June 2021</p>
+            <p><i>IBM badge</i></p>
+            <br>
+            <h3>Hybrid Cloud Intro</h3>
+            <p>June 2021</p>
+            <p><i>IBM badge</i></p>
+            <br>
+        </div>
+        <div class="download-resume">
+            <h2>Download Resume</h2>
+            <hr>
+            <p>Download my resume <a href="Thandazani-Mbutho (4).pdf" download>here</a>.</p>
+            <br>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        <!-- Contact information and social media link -->
+        <p>Feel free to contact and please follow me on Instagram &#128517;</p>
+        <br>
+        <!-- Copyright information -->
+        <p>&copy; 2024 Thandazani Mbutho. All rights reserved.</p>
+    </div>
+  </form>
+  <!-- Script file for logic -->
+  <script src="logic.js"></script>
+  <script>
+    // Call the function to animate skills when the page loads
+    window.onload = function() {
+        animateSkills();
+    };
+</script>
+</body>
+</html>
